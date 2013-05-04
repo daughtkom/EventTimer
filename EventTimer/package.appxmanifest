@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="30816ScottIsaacs.EventTimer" Version="1.0.0.4" Publisher="CN=925E779F-4C88-497A-83CA-61DBCD7B63BF" />
+  <Properties>
+    <DisplayName>Event Timer</DisplayName>
+    <PublisherDisplayName>Scott Isaacs</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="Event Timer" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="A timer to use before sessions of a seminar." ForegroundText="light" BackgroundColor="#660000">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="images\splashscreen.png" BackgroundColor="#660000" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+</Package>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>EventTimer</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- EventTimer references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/clockControl.js"></script>
+</head>
+<body>
+    <img id="currentSlide" src="/images/spacer.png" />
+    <div class="win-ui-dark" style="background-color: #660000" data-win-control="WinJS.UI.AppBar" data-win-options="{ layout:'custom', placement: 'top', sticky: 'true' }" id="allControls">
+        <span id="controls" class="transparent">Resume at:
+            <div id="targetTime" data-win-control="WinJS.UI.TimePicker" data-win-options="{ clock: '24HourClock' }"></div>
+            &nbsp;&nbsp;&nbsp;
+            Slide duration:
+            <select id="slideDuration">
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;
+            <span id="alwaysInCorner" data-win-control="WinJS.UI.ToggleSwitch" data-win-options="{ labelOn: 'Always in corner', labelOff: 'Center screen on 1st' }"></span>
+            &nbsp;&nbsp;&nbsp;
+            <button id="filesButton">Select slide images...</button>
+        </span>
+    </div>
+    <div id="timerContainer" class="firstSlide">
+        <div id="timerPrompt">We'll get started in</div>
+        <div id="timer" data-win-control="Isaacs.UI.Clock" data-win-options="{ mode: Isaacs.UI.ClockModes.CountDown }"></div>
+    </div>
+
+</body>
+</html>

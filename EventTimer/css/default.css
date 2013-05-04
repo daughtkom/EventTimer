@@ -1,0 +1,79 @@
+﻿body {
+    display: -ms-grid;
+    -ms-grid-rows: 50px 1fr 200px;
+    -ms-grid-columns: 1fr;
+}
+
+#currentSlide {
+    -ms-grid-row-span: 3;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+}
+
+#allControls {
+    -ms-grid-row: 1;
+    padding: 20px;
+}
+
+
+#timerContainer {
+    font-size: 1.5em;
+    text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+    text-align: center;
+
+    -ms-grid-row: 3;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: end;
+    
+    padding-right: 100px;
+}
+
+    #timerContainer.firstSlide {
+        font-size: 4em;
+        text-align: center;
+    
+        -ms-grid-row: 2;
+        -ms-grid-row-align: center;
+        -ms-grid-column-align: center;
+        
+        padding: 0px;
+    }
+
+#timerPrompt {
+    font-weight: bold;
+}
+
+#timerContainer.firstSlide #timerPrompt {
+    font-weight: normal;
+}
+
+#timer {
+    font-size: 3em;
+}
+
+
+
+#alwaysInCorner {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#targetTime *.win-timepicker-second {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#controlsButton {
+    border-color: transparent;
+    background-color: transparent;
+    color: transparent;
+}
+
+    #controlsButton:hover {
+        border-color: #eeeeee;
+        background-color: #f3f3f3;
+        color: #ffffff;
+    }
